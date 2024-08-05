@@ -48,10 +48,15 @@ Sokoto Coventry Fingerprint Dataset (SOCOFing) is a biometric fingerprint databa
 ### Download Instructions
 
 1. **Access the Dataset:**
-   - Visit the [Kaggle SOCOFing Dataset Page](https://www.kaggle.com/datasets/ruizgara/socofing?select=SOCOFing) and download the dataset.
+   - Visit the [Kaggle SOCOFing Dataset Page](https://www.kaggle.com/datasets/ruizgara/socofing?select=SOCOFing) and download the zip file.
 
 2. **Extract the Dataset:**
    - After downloading, extract the dataset into this `dataset/` directory so that it is accessible for processing and model training.
+   - You will have 2 folders, /Real and /Altered
+   - /Altered will have 3 subfolders:
+         * /Altered-Easy
+         * /Altered-Medium
+         * /Altered-Hard
 
 ## Data Preparation
 
