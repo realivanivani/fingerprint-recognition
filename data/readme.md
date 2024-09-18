@@ -56,8 +56,8 @@ Before using the dataset for machine learning models, it is preprocessed using t
 3.	Storage: Preprocessed images and their corresponding labels are saved into NumPy arrays for easy integration into ML pipelines.
 
 The files are saved as:
-	* x_real.npy and y_real.npy for the real images.
-	* x_easy.npy, x_medium.npy, and x_hard.npy for the altered images (Easy, Medium, and Hard).
+ - x_real.npy and y_real.npy for the real images.
+ - x_easy.npy, x_medium.npy, and x_hard.npy for the altered images (Easy, Medium, and Hard).
 
 These preprocessing steps ensure the dataset is prepared for model training, reducing the need for on-the-fly processing during model execution.
 
