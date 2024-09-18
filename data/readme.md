@@ -2,7 +2,10 @@ This is the placeholder directory for the dataset.
 
 # SOCOFing Dataset
 
-This directory contains the SOCOFing dataset, which is used for fingerprint recognition and biometric system development. The dataset is sourced from [Kaggle](https://www.kaggle.com/datasets/ruizgara/socofing).
+This directory contains the SOCOFing dataset, used for fingerprint recognition and biometric system development. The dataset is sourced from Kaggle. All references to the dataset below pertain to the original, unprocessed dataset as made available on Kaggle
+[Kaggle](https://www.kaggle.com/datasets/ruizgara/socofing).
+
+However, to use this dataset for machine learning models, we have preprocessed the data using the preprocess.ipynb notebook. This notebook includes steps such as image resizing, label extraction, and saving the data in a format ready for model training. These processed files are stored in NumPy arrays, allowing seamless integration into ML workflows.
 
 Here is the description of the dataset, as writen on their Kaggle's page:
 
@@ -44,6 +47,19 @@ Sokoto Coventry Fingerprint Dataset (SOCOFing) is a biometric fingerprint databa
         - An example from Altered-Medium dataset: 7__M_Left_thumb_finger_CR.BMP
           ![7__M_Left_thumb_finger_CR](https://github.com/user-attachments/assets/a33b9c1b-66ac-4c09-ad87-2bef03b38efc)
 
+### Preprocessing for Machine Learning
+
+Before using the dataset for machine learning models, it is preprocessed using the preprocess.ipynb notebook. Key steps include:
+
+	1.	Resizing: All images are resized to a fixed shape of (96, 96).
+	2.	Label Extraction: Labels such as subject ID, gender, hand, and finger type are extracted from the filenames.
+	3.	Storage: Preprocessed images and their corresponding labels are saved into NumPy arrays for easy integration into ML pipelines.
+	•	The files are saved as:
+	•	x_real.npy and y_real.npy for the real images.
+	•	x_easy.npy, x_medium.npy, and x_hard.npy for the altered images (Easy, Medium, and Hard).
+
+These preprocessing steps ensure the dataset is prepared for model training, reducing the need for on-the-fly processing during model execution.
+
          
 ### Download Instructions
 
@@ -58,14 +74,9 @@ Sokoto Coventry Fingerprint Dataset (SOCOFing) is a biometric fingerprint databa
          * /Altered-Medium
          * /Altered-Hard
 
-## Data Preparation
+3.	**Run Preprocessing:**
+	-	Use the provided preprocess.ipynb notebook to preprocess the images and labels for model training.
 
-Before using the dataset for training models, it may require preprocessing steps such as:
-
-- **Normalization:** Scaling pixel values to a standard range.
-- **Augmentation:** Applying transformations like rotations and flips to increase variability.
-
-These preprocessing steps can be automated in the provided Jupyter notebooks in the main repository.
 
 ## Licensing and Restrictions
 
