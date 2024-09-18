@@ -51,10 +51,11 @@ Sokoto Coventry Fingerprint Dataset (SOCOFing) is a biometric fingerprint databa
 
 Before using the dataset for machine learning models, it is preprocessed using the preprocess.ipynb notebook. Key steps include:
 
-	1.	Resizing: All images are resized to a fixed shape of (96, 96).
-	2.	Label Extraction: Labels such as subject ID, gender, hand, and finger type are extracted from the filenames.
-	3.	Storage: Preprocessed images and their corresponding labels are saved into NumPy arrays for easy integration into ML pipelines.
-	•	The files are saved as:
+1.	Resizing: All images are resized to a fixed shape of (96, 96).
+2.	Label Extraction: Labels such as subject ID, gender, hand, and finger type are extracted from the filenames.
+3.	Storage: Preprocessed images and their corresponding labels are saved into NumPy arrays for easy integration into ML pipelines.
+
+•	The files are saved as:
 	•	x_real.npy and y_real.npy for the real images.
 	•	x_easy.npy, x_medium.npy, and x_hard.npy for the altered images (Easy, Medium, and Hard).
 
