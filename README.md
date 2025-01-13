@@ -52,10 +52,10 @@ The project is organized into a series of Jupyter notebooks. Below is a brief de
 2. **02_Model.ipynb:** 
    - Builds and trains CNN models using Keras.
    - Evaluates model performance and optimizes hyperparameters.
+
+3. **03_Model_Validation_and_Summary.ipynb:**
    - Tests the model on validation data.
    - Analyzes results using metrics such as accuracy, precision, recall, and F1-score.
-
-3. **03_Alternative_Solutions.ipynb:** 
    - Explores additional approaches and solutions.
    - Compares performance with the main solution.
 
