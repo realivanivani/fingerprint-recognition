@@ -6,7 +6,7 @@ This directory contains the trained models for the **Fingerprint Recognition Pro
 ## Table of Contents
 - [Model Architecture](#model-architecture)
 - [Dependencies](#dependencies)
-- [Dataset](#dataset)
+- [Dependencies](#dataset)
 - [Training Details](#training-details)
 - [Model Usage](#model-usage)
 
