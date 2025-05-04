@@ -1,10 +1,8 @@
-# Fingerprint Recognition Model
+# Fingerprint Recognition with SOCOFing Dataset
 
 <a target="_blank" href="https://cookiecutter-data-science.drivendata.org/">
     <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
 </a>
-
-# Fingerprint Recognition with SOCOFing Dataset
 
 This repository contains various solutions for fingerprint recognition using the SOCOFing dataset from Kaggle. We employ Convolutional Neural Networks (CNNs) with Python and Keras to build models capable of identifying and verifying fingerprints. The project is organized as a series of Jupyter notebooks, each addressing different aspects and techniques in fingerprint recognition.
 
