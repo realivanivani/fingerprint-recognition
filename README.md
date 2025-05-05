@@ -14,7 +14,7 @@ The dataset used in this project is the [SOCOFing](https://www.kaggle.com/datase
 
 - **notebooks/**: Contains Jupyter notebooks for different stages and solutions of the project.
 - **models/**: Directory where trained models are saved.
-- **data/**: Placeholder directory for the dataset. The dataset can be downloaded from Kaggle page [SOCOFing](https://www.kaggle.com/datasets/ruizgara/socofing) or extracted here.
+- **dataset/**: Placeholder directory for the dataset. The dataset can be downloaded from Kaggle page [SOCOFing](https://www.kaggle.com/datasets/ruizgara/socofing) or extracted here.
 - **fingerprint_recognition_model/**: source code
 - **README.md**: This file.
 - **requirements.txt**: List of dependencies required for this project.
