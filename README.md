@@ -1,8 +1,10 @@
-# Fingerprint Recognition with SOCOFing Dataset
+# Fingerprint Recognition Model
 
 <a target="_blank" href="https://cookiecutter-data-science.drivendata.org/">
     <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
 </a>
+
+# Fingerprint Recognition with SOCOFing Dataset
 
 This repository contains various solutions for fingerprint recognition using the SOCOFing dataset from Kaggle. We employ Convolutional Neural Networks (CNNs) with Python and Keras to build models capable of identifying and verifying fingerprints. The project is organized as a series of Jupyter notebooks, each addressing different aspects and techniques in fingerprint recognition.
 
@@ -14,18 +16,17 @@ The dataset used in this project is the [SOCOFing](https://www.kaggle.com/datase
 
 - **notebooks/**: Contains Jupyter notebooks for different stages and solutions of the project.
 - **models/**: Directory where trained models are saved.
-- **dataset/**: Placeholder directory for the dataset. The dataset can be downloaded from Kaggle page [SOCOFing](https://www.kaggle.com/datasets/ruizgara/socofing) or extracted here.
+- **data/**: Placeholder directory for the dataset. The dataset can be downloaded from Kaggle page [SOCOFing](https://www.kaggle.com/datasets/ruizgara/socofing) or extracted here.
 - **fingerprint_recognition_model/**: source code
 - **README.md**: This file.
 - **requirements.txt**: List of dependencies required for this project.
 
 ## Project Organization
 
-```
 ├── LICENSE            <- Open-source license if one is chosen
 ├── Makefile           <- Makefile with convenience commands like `make data` or `make train`
 ├── README.md          <- The top-level README for developers using this project.
-├── dataset/		
+├── dataset/
 │   └── SOCOFing/	<- contains .BMP images
 |   └── output/		<- contains processed images x_easy.npy, x_easy.npz, etc.
 │
@@ -43,9 +44,9 @@ The dataset used in this project is the [SOCOFing](https://www.kaggle.com/datase
 	|
 	├── config.py               <- Store useful variables and configuration
         │
-	├── load_data.py     
-        │
-	├── preprocessing.py		<- Code to preprocess and load the data
+	├── load_data.py	<- Loading processed data
+    │
+	├── preprocessing.py		<- Code to preprocess raw data and extract metadata
         │
 	├── model.py			<- Code for defining the model
         │
@@ -57,8 +58,6 @@ The dataset used in this project is the [SOCOFing](https://www.kaggle.com/datase
 	│
 	└── main.py    			<- main
 
-```
-
 ## Installation
 
 1. **Clone the repository:**
@@ -67,13 +66,11 @@ The dataset used in this project is the [SOCOFing](https://www.kaggle.com/datase
    git clone https://github.com/realivanivani/fingerprint-recognition.git
    cd fingerprint-recognition
    ```
-
 2. **Install the required packages:**
 
    ```bash
    pip install -r requirements.txt
    ```
-
 3. **Download the dataset:**
 
    - Download the SOCOFing dataset from [Kaggle](https://www.kaggle.com/datasets/ruizgara/socofing).
@@ -83,11 +80,12 @@ The dataset used in this project is the [SOCOFing](https://www.kaggle.com/datase
 
 The project is organized into a series of Jupyter notebooks. Below is a brief description of each:
 
-1. **01_Data_Preprocessing.ipynb:** 
+1. **01_Data_Preprocessing.ipynb:**
+
    - Loads and preprocesses the fingerprint images.
    - Performs data augmentation to increase dataset variability.
-
 2. **02_Model_Validation_and_Summary.ipynb:**
+
    - Builds and trains CNN models using Keras.
    - Evaluates model performance and optimizes hyperparameters.
    - Tests the model on validation data.
@@ -112,5 +110,4 @@ The MIT License (MIT)
 
 For any questions or issues, please contact [Ivan Ivani] at [jasamivanivani@gmail.com].
 
---------
-
+---
