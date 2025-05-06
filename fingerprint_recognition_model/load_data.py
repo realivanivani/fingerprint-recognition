@@ -24,3 +24,17 @@ def load_dataset():
         print(f"{dataset}: X shape {x_data.shape}, Y shape {y_data.shape}")
 
     return data_dict
+
+from config import TEST_SIZE
+from sklearn.model_selection import train_test_split
+    
+def preprocess_data():
+    data_dict = load_dataset()
+
+    # Example: combine all datasets (you can change logic here)
+    x_data = np.concatenate([data_dict['easy'][0], data_dict['medium'][0], data_dict['hard'][0]], axis=0)
+    label_data = np.concatenate([data_dict['easy'][1], data_dict['medium'][1], data_dict['hard'][1]], axis=0)
+
+    x_train, x_val, label_train, label_val = train_test_split(x_data, label_data, test_size=TEST_SIZE)
+    
+    return x_train, x_val, label_train, label_val 

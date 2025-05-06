@@ -4,7 +4,7 @@ from tensorflow.keras.models import load_model
 from sklearn.metrics import accuracy_score, confusion_matrix
 from sklearn.metrics import roc_curve, auc
 import config
-from preprocessing import preprocess_data
+from load_data import preprocess_data
 from train import train_model
 from predict import predict_model
 from plots import plot_history, plot_confusion_matrix, plot_roc_curve

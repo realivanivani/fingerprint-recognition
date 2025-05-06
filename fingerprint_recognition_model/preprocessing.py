@@ -38,7 +38,8 @@ def extract_label(img_path: str) -> np.ndarray:
 
 def extract_label_alt(img_path: str) -> np.ndarray:
     """
-    Extract subject ID, gender, hand, and finger from an Altered-image filename.
+    Extract subject ID, gender, hand, and finger from an Altered-image 
+    filename.
     Slight variant in splitting to handle extra underscores.
 
     Args:
@@ -74,7 +75,8 @@ def preprocess_directory(
     Load images matching a glob pattern, extract labels, and save numpy arrays.
 
     Args:
-        pattern (str): Glob pattern for image files (e.g., 'dataset/SOCOFing/Real/*.BMP').
+        pattern (str): Glob pattern for image files 
+        (e.g., 'dataset/SOCOFing/Real/*.BMP').
         label_func (callable): Function to extract label array from image path.
         output_x (str): Path to save images .npy file.
         output_y (str): Path to save labels .npy file.
@@ -124,8 +126,8 @@ def preprocess_real(data_dir: str = 'dataset/SOCOFing/Real', **kwargs) -> None:
 def preprocess_altered(
     difficulty: str,
     data_dir: str = 'dataset/SOCOFing/Altered',
-    **kwargs
-) -> None:
+    **kwargs) -> None:
+
     subset = f"Altered-{difficulty.capitalize()}"
     pattern = os.path.join(data_dir, subset, '*.BMP')
     output_prefix = difficulty.lower()
@@ -136,27 +138,6 @@ def preprocess_altered(
         output_y=os.path.join(data_dir, '../y_{}.npy'.format(output_prefix)),
         **kwargs
     )
-
-
-# -----------------------------------------------------------------------------
-# Data Loading
-# -----------------------------------------------------------------------------
-
-from load_data import load_dataset
-from config import TEST_SIZE
-from sklearn.model_selection import train_test_split
-    
-def preprocess_data():
-    data_dict = load_dataset()
-
-    # Example: combine all datasets (you can change logic here)
-    x_data = np.concatenate([data_dict['easy'][0], data_dict['medium'][0], data_dict['hard'][0]], axis=0)
-    label_data = np.concatenate([data_dict['easy'][1], data_dict['medium'][1], data_dict['hard'][1]], axis=0)
-
-    x_train, x_val, label_train, label_val = train_test_split(x_data, label_data, test_size=TEST_SIZE)
-    
-    return x_train, x_val, label_train, label_val 
-
 
 # -----------------------------------------------------------------------------
 # If run as script, process all subsets
