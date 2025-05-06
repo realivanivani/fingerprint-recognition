@@ -45,7 +45,7 @@ The dataset used in this project is the [SOCOFing](https://www.kaggle.com/datase
 	├── config.py               <- Store useful variables and configuration
         │
 	├── load_data.py	<- Loading processed data
-    │
+    	│
 	├── preprocessing.py		<- Code to preprocess raw data and extract metadata
         │
 	├── model.py			<- Code for defining the model
