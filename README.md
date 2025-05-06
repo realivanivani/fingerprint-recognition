@@ -23,20 +23,20 @@ The dataset used in this project is the [SOCOFing](https://www.kaggle.com/datase
 
 ## Project Organization
 
-├── LICENSE            <- Open-source license if one is chosen
-├── Makefile           <- Makefile with convenience commands like `make data` or `make train`
-├── README.md          <- The top-level README for developers using this project.
+├── LICENSE		<- Open-source license if one is chosen
+├── Makefile		<- Makefile with convenience commands like `make data` or `make train`
+├── README.md		<- The top-level README for developers using this project.
 ├── dataset/
 │   └── SOCOFing/	<- contains .BMP images
 |   └── output/		<- contains processed images x_easy.npy, x_easy.npz, etc.
 │
-├── models             <- Trained and serialized models, model predictions, or model summaries
+├── models		<- Trained and serialized models, model predictions, or model summaries
 │
-├── notebooks          <- Jupyter notebooks, separated into Data Preprocessing, and Model_Validation
+├── notebooks		<- Jupyter notebooks, separated into Data Preprocessing, and Model_Validation
 │   ├──01_Data_Preprocessing.ipynb
 │   ├──02_Model_Validation_and_Summary.ipynb
 │
-├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
+├── requirements.txt	<- The requirements file for reproducing the analysis environment, e.g.
 │                         generated with `pip freeze > requirements.txt`
 │
 └── fingerprint_recognition_model   <- Source code for use in this project.
