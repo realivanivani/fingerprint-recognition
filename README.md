@@ -22,7 +22,7 @@ The dataset used in this project is the [SOCOFing](https://www.kaggle.com/datase
 - **requirements.txt**: List of dependencies required for this project.
 
 ## Project Organization
-
+```
 ├── LICENSE		<- Open-source license if one is chosen
 ├── Makefile		<- Makefile with convenience commands like `make data` or `make train`
 ├── README.md		<- The top-level README for developers using this project.
@@ -57,7 +57,7 @@ The dataset used in this project is the [SOCOFing](https://www.kaggle.com/datase
 	├── plots.py			<- Code to Validate and create visualizations
 	│
 	└── main.py    			<- main
-
+```
 ## Installation
 
 1. **Clone the repository:**
